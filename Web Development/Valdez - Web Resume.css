@@ -1,0 +1,490 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.print-area
+{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.print-area .header
+{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(76, 76, 76);
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.header img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border: 5px solid white;
+    box-shadow: 3px 3px 10px rgb(76, 76, 76);
+    cursor: pointer;
+    transition: .5s;
+    user-select: none;
+}
+
+.header img:hover
+{
+    filter: grayscale(0%);
+    transform: scale(1.03);
+    box-shadow: 3px 3px 10px gray;
+}
+
+.header-text
+{
+    color: white;
+    width: 60%;
+    margin-left: auto;
+}
+
+.header-text h1
+{
+    font-size: 80px;
+    font-weight: normal;
+    align-items: right;
+    position: relative;
+}
+
+.header-text p
+{
+    font-size: 20px;
+    color: goldenrod;
+}
+
+.content
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-info
+{
+    width: 30%;
+    text-align: left;
+    background-color: grey;
+    padding-bottom: 20px;
+    color: white
+}
+
+.left-info .contact
+{
+    margin-top: 130px;
+    padding: 0 20px;
+}
+
+.contact h4
+{
+    font-size: 30px;
+    font-weight: normal;
+    margin: 20px 0
+}
+
+.contact h5
+{
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.contact p
+{
+    font-size: 16px;
+}
+
+.skills
+{
+    margin-top: 33px;
+}
+
+.skills h1
+{
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: 18px;
+}
+
+.bars
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px 15px;
+    padding: 0 20px;
+}
+
+.bars .bar p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar span
+{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(76, 76, 76);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar span::before
+{
+    position: absolute;
+    content: "";
+    width: 45%;
+    height: 80%;
+    background-color: goldenrod;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.bars .bar1 p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar1 span
+{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(76, 76, 76);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar1 span::before
+{
+    position: absolute;
+    content: "";
+    width:55%;
+    height: 80%;
+    background-color: goldenrod;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.bars .bar2 p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar2 span
+{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(76, 76, 76);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar2 span::before
+{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: goldenrod;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.bars .bar3 p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar3 span
+{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(76, 76, 76);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar3 span::before
+{
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 80%;
+    background-color: goldenrod;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.bars .bar4 p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar4 span
+{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(76, 76, 76);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar4 span::before
+{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: goldenrod;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.bars .bar5 p
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.bar5 span
+{
+    display: block;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(76, 76, 76);
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bar5 span::before
+{
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    background-color: goldenrod;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.certi
+{
+    margin-left: 18px;
+}
+
+.certi h1
+{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.certi h3
+{
+    margin: 10px 0;
+    font-size: 15px;
+    color: lightgray;
+    font-weight: lighter;
+}
+
+.bullets
+{
+    margin-left: 16px;
+}
+
+.details
+{
+    margin-left: 18px;
+}
+
+.details h1
+{
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.details h4
+{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.details p
+{
+    font-size: 15px;
+    color: lightgray;
+}
+
+
+.right-info
+{
+    width: 70%;
+    background-color: whitesmoke;
+    padding: 50px
+}
+
+.right-info h1
+{
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.right-info h1 span
+{
+    margin-right: 19px;
+    font-size: 50px;
+    color: lightgray
+}
+
+.right-info p
+{
+    padding-left: 70px;
+    text-align: justify;
+    font-size: 17px;
+    color: gray;
+    margin-top: 10px;
+    word-break: break-word;
+}
+
+.right-info .aboutme
+{
+    font-size: 36px;
+    margin-left: 2px;
+}
+
+.courses
+{
+    margin: 20px 0;
+}
+
+.education .courses
+{
+    position: relative;
+}
+
+.courses h3
+{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+}
+
+.courses h4
+{
+    font-size: 18px;
+    padding-left: 70px;
+    font-weight: normal;
+    color: gray;
+}
+
+.courses span
+{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.work
+{
+    font-size: 22px;
+    font-weight: normal;
+    padding-left: 70px;
+    padding-top: 15px;
+    color: gray;
+}
+
+.description h4
+{
+    font-size: 22px;
+    font-weight: lighter;
+    padding-left: 70px;
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
+}
+
+.description p
+{
+    font-size: 17px;
+    font-weight: normal;   
+    color: gray;
+    text-align: justify;
+    word-break: break-word;
+}
+
+button
+{
+    font-size: 25px;
+    padding: 10px 20px;
+    margin: 50px 0 50px 123px;
+    background-color: gray;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px darkslategrey;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover
+{
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+}
+
+@media print
+{
+    body *
+    {
+        visibility: hidden;
+    }
+    .print-area *
+    {
+        visibility: visible;
+    }
+}
+

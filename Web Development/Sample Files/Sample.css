@@ -1,0 +1,15 @@
+p {
+    color: red;
+
+}
+
+.One {
+    border: 1.5px outset green;
+    height: 200px;
+    width: 50%;
+    background-color:lemonchiffon;
+}
+
+.wanpoint{
+    text-align: center;
+}
